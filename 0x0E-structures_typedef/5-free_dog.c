@@ -2,8 +2,7 @@
 #include "dog.h"
 /**
  * main - check the code
- *
- * Return: Always 0.
+ *@d: struct dog to free
  */
 
 void free_dog(dog_t *d)
