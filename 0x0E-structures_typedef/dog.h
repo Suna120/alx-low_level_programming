@@ -7,7 +7,8 @@
  * Return: Always 0.
  */
 
-struct dog {
+struct dog
+{
 char *name;
 float age;
 char *owner;
