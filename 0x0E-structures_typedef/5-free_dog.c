@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "dog.h"
 /**
  * main - check the code
@@ -15,6 +14,4 @@ free(d->owner);
 free(d->name);
 free(d);
 }
-else
-return;
 }
