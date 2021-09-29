@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <stdlib.h>
 #include "dog.h"
 
@@ -76,21 +75,3 @@ char *_strcpy(char *dest, char *src)
 
 	return (dest);
 }
-=======
-#include <stdio.h>
-#include "dog.h"
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    dog_t *my_dog;
-
-    my_dog = new_dog("Poppy", 3.5, "Bob");
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-    return (0);
-}
->>>>>>> f6e069d2768148a1662e25252c4a711b32783a37
