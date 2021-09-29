@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include "function_pointers.h"
-
 /*
  * File: 0-print_name.c
  * Auth: Brennan D Baraban
