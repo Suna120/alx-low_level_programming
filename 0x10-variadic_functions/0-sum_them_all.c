@@ -4,7 +4,6 @@
 /**
  *sum_them_all - Sums the value of all its parameters.
  *@n: last number to be summed.
- *
  *Return: The sum of all its parameters.
  */
 
