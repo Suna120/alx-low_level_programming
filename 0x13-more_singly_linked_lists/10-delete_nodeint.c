@@ -1,38 +1,40 @@
 #include "lists.h"
-#include <iostream>
-#include <cstdlib>
+#include <stdlib.h>
 /**
- *insert_nodeint_at_index - Inserts a node at a given position.
- *@head: Pointer to the listint_t.
- *@idx: Index to add new nodes. starts at 0.
- *@n: Number of nodes.
- *
- *Return: If the function fails - NULL
- *        Otherwise - Address of the new node.
+ *delete_nodeint_at_index-Deletes a node at specified index.
+ *@head:Pointer to a pointer that points to the head of the node.
+ *@index:Index of the node to delete.
+ *Return:1 if successful, -1 if fail.
  */
 
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t *newNode, *temp = *head;
-unsigned int nodeint = 0;
-newNode = malloc(sizeof(listint_t));
-if (newNode == NULL)
-return (NULL);
-newNode->n = n;
-if (idx == 0)
 {
-*head = newNode;
-newNode->next = temp;
-return (newNode);
+listint_t *curr_node;
+listint_t *next;
+unsigned int i;
+if (!head || !(*head))
+{
+return (-1);
 }
-while (nodeint < (idx - 1))
+curr_node = (*head);
+if (!index)
 {
-nodeint++;
-if (temp == NULL || temp->next == NULL)
-return (NULL);
-temp = temp->next;
+(*head) = curr_node->next;
+free(curr_node);
+return (1);
 }
-newNode->next = temp->next;
-temp->next = newNode;
-return (newNode);
+for (i = 0; curr_node && i < index - 1; i++)
+{
+curr_node = curr_node->next;
+}
+if (!curr_node || !(curr_node->next))
+{
+return (-1);
+}
+next = curr_node->next->next;
+free(curr_node->next);
+curr_node->next = next;
+return (1);
+}
 }
