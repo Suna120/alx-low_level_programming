@@ -37,4 +37,3 @@ free(curr_node->next);
 curr_node->next = next;
 return (1);
 }
-}
