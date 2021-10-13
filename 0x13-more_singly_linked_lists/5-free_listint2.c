@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- *free_listint - Frees memory occupied by a list.
+ *free_listint2 - Frees memory occupied by a list.
  *@head: Pointer to the first node o the list.
  *Return: Nothing.
  */
