@@ -33,6 +33,7 @@ if (!curr_node || !(curr_node->next))
 {
 return (-1);
 }
+  
 next = curr_node->next->next;
 free(curr_node->next);
 curr_node->next = next;
