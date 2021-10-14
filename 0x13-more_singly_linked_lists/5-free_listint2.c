@@ -1,10 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 /**
- *free_listint-Frees memory occupied by a list.
- *@head:Pointer to the first node o the list.
- *Return:Nothing.
+ *free_listint2-Frees memory occupied by a list.
+ *@head:Pointer to the first node of the list.
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
 listint_t *temp;
 
@@ -14,11 +15,14 @@ free(head);
 }
 else
 {
-while (head != NULL)
+
+
+while (*head != NULL)
 {
-temp = head;
-head = head->next;
+temp = (*head);
+(*head) = (*head)->next;
 free(temp);
 }
+head = NULL;
 }
 }
