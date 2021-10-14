@@ -34,12 +34,10 @@ while (nodeint < (idx - 1))
 nodeint++;
 if (temp == NULL || temp->next == NULL)
 return (NULL);
-
 temp = temp->next;
 }
 
 newNode->next = temp->next;
 temp->next = newNode;
-
 return (newNode);
 }
