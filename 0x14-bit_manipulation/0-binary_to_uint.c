@@ -1,20 +1,15 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /*
-*_ylen - length of input
-*@y: input string
-*_to_power - prints power of numbers
-*@base: base
-*@power: raised to
-*binary_to_uint - converts binary number to unsigned int
-*@b: points to a string of 0 and 1 chars
-*Return: converted number or 0 when b == NULL.
+*_strlen - length of input strings
+*@str: input string
+*Return: len of string
 */
-int _ylen(const char *y)
+int _strlen(const char *str)
 {
     int len = 0;
-    while (*y)
+    while (*str)
     {
         len++;
         y++;
@@ -22,6 +17,12 @@ int _ylen(const char *y)
     return (len);
 }
 
+/*
+*_to_power - prints power of numbers
+*@base: base
+*@power: raised to
+*Return: product of two numbers
+*/
 int _to_power(const int base, int power)
 {
     int product = 1;
@@ -32,6 +33,13 @@ int _to_power(const int base, int power)
     }
     return(product);
 }
+
+
+/*
+*binary_to_uint - converts binary number to unsigned int
+*@b: points to a string of 0 and 1 chars
+*Return: converted number or 0 when b == NULL.
+*/
 
 unsigned int binary_to_uint(const char *b);
 {
