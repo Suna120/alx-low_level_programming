@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /*
 *_strlen - length of input strings
@@ -44,7 +43,7 @@ int _to_power(const int base, int power)
 unsigned int binary_to_uint(const char *b);
 {
     int power, num;
-    power = _ylen(b) - 1;
+    power = _strlen(b) - 1;
     num = 0;
     if (!b)
     {
