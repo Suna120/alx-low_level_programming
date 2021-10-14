@@ -1,6 +1,4 @@
-#include <stdlib.h>
 #include "main.h"
-#include <string.h>
 
 unsigned int binary_to_uint(const char *b);
 /**
