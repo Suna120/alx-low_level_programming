@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * powX-powers a number b to the p's power
  * @b: base
  * @p : power
@@ -17,7 +17,7 @@ unsigned long int powX(int b, int p)
 	return (ans);
 }
 
-/*
+/**
  * get_bit - returns the value at an index
  * @n: input unsigned long
  * @index: index to return
