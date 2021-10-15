@@ -1,6 +1,4 @@
 #include "main.h"
-#include "main.h"
-#define  BIT_SIZE 8
 
 unsigned long int powX(int b, int p)
 {
