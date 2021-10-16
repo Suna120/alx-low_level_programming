@@ -1,1 +1,1 @@
-My new language - c
+Learning C
