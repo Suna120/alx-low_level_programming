@@ -36,3 +36,4 @@ if (c2 < 0)
 dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd2), exit(100);
 return (0);
 }
+
