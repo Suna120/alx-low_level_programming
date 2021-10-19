@@ -2,6 +2,8 @@
 
 /**
 *main - copies the content of a file to another file
+* @argc: argument count
+* @argv: argument vector
 *Return: Always 0
 */
 int main(int argc, char *argv[])
